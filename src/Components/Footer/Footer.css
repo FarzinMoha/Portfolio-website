@@ -1,0 +1,11 @@
+.footer{
+    color: var(--white);
+    background-color: var(--pink) ;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer span{
+    letter-spacing: 5px;
+}

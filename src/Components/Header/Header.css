@@ -1,0 +1,121 @@
+header{
+    width: 100%;
+    position: fixed;
+    height: 70px;
+    z-index: 10;
+}
+.header{
+    padding: 10px 10%;
+    transition: .3s;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.header h1{
+    color: var(--white);
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.items{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    font-size: 20px;
+    
+}
+
+.items li{
+    padding: 10px 20px;
+    transition: .5s;
+    margin-left: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: var(--white);
+}
+.items li:hover{
+    background-color: var(--pink-hover);
+}
+.color{
+    background-color: var(--pink-hover);
+}
+
+.ham{
+    display: none;
+    color: var(--white);
+}
+
+.scrolled{
+    color: var(--white);
+    transition: .3s;
+    background-color: var(--pink) ;
+}
+
+.ham-icon{
+    cursor: pointer;
+    font-size: 30px;
+}
+
+
+
+
+@media screen and (max-width:768px) {
+
+    .items{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100px;
+        top: -300%;
+        transition: .4s ease;
+        color: azure;
+        justify-content: center;
+    }
+
+    .items li{
+        margin-left: 0px;
+    }
+
+    .item-container1{
+        background-color: var(--pink1);
+        padding: 10px 0px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .item-container2{
+        background-color: var(--pink2);
+        padding: 10px 0px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .item-container3{
+        background-color: var(--pink3);
+        padding: 10px 0px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .ham{
+        display: block;
+    }
+
+    .active{
+        transition: .4s ease;
+        top: 113px;
+    }    
+}
+
